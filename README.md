@@ -2,10 +2,10 @@
 
 # REGEN: Real-Time Photorealism Enhancement in Games via a Dual-Stage Generative Network Framework
 
-<div align="center">
-  <img src="https://drive.google.com/thumbnail?id=1W8nu1exktsaBzE0c7pKs5Qc709uz67VO&sz=w1000" alt="Image" width="400px" height="auto">
-  <img src="https://drive.google.com/thumbnail?id=1CCytLrJvEtahGwy8Ae0KCx4v5tL3Gi5b&sz=w1000" alt="Image" width="400px" height="auto">
-</div>
+<p align="center">
+  <img src="./demos/demo_gta.gif" width="45%" />
+  <img src="./demos/demo_carla.gif" width="45%" />
+</p>
 
 ## Abstract
 
