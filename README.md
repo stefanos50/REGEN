@@ -7,8 +7,8 @@
 The following demos illustrate the framework performing `GTAV → Cityscapes` with an RTX 4090 and `CARLA → KITTI` with an RTX 4070 Super and a 20 fps cap of the simulator in synchronous mode. Videos may require some time to load.
 
 <p align="center">
-  <img src="./demos/demo_gta.gif" width="45%" />
-  <img src="./demos/demo_carla.gif" width="45%" />
+  <img src="./demos/demo_gta.gif" width="50%" />
+  <img src="./demos/demo_carla.gif" width="50%" />
 </p>
 
 ## Abstract
