@@ -2,6 +2,10 @@
 
 # REGEN: Real-Time Photorealism Enhancement in Games via a Dual-Stage Generative Network Framework
 
+## Demonstration
+
+The following demos illustrate the framework performing `GTAV → Cityscapes` with an RTX 4090 and `CARLA → KITTI` with an RTX 4070 Super and a 20 fps cap of the simulator in synchronous mode. Videos may require some time to load.
+
 <p align="center">
   <img src="./demos/demo_gta.gif" width="45%" />
   <img src="./demos/demo_carla.gif" width="45%" />
@@ -21,7 +25,7 @@ If you used the REGEN framwork or any of the pretrained models from this reposit
 }
 ```
 
-> 📝 **Note**: This repository uses code from the Pix2PixHD repository that can be found [here](https://github.com/NVIDIA/pix2pixHD).
+> 📝 **Note**: This repository uses code from the [Pix2PixHD repository](https://github.com/NVIDIA/pix2pixHD).
 
 ## Training
 
@@ -37,7 +41,7 @@ To train a model that enhances the photorealism of GTAV towards the characterist
 
 ### Starting the Training
 
-After collecting the required datasets, place the training and test sets of the game/simulator dataset into `./data/train_A` and `./data/test_A`, respectively. The corresponding photorealism-enhanced images should be transferred into the `./data/train_B` and `./data/test_B` directories. To start training, execute the following command:
+After collecting the required datasets, place the training and test sets of the game/simulator dataset into `code/data/train_A` and `code/data/test_A`, respectively. The corresponding photorealism-enhanced images should be transferred into the `code/data/train_B` and `code/data/test_B` directories. To start training, execute the following command:
 
 ```javascript
 python train.py --dataroot ./data --name REGEN --label_nc 0 --no_instance --gpu_id 0
@@ -45,13 +49,13 @@ python train.py --dataroot ./data --name REGEN --label_nc 0 --no_instance --gpu_
 
 ## Testing
 
-To test the framework, we provide pretrained models for `GTAV → Cityscapes`, `CARLA → Cityscapes`, and `CARLA → KITTI`. Download the models from [Google Drive](https://drive.google.com/drive/folders/19Q8E9wy3MR-vUfOfVwytIzv4QNpndYo0?usp=sharing) and transfer them into `./checkpoints/REGEN/`. Finally, transfer the images that are to be inferred with the model in the `./data/test_A` directory and execute the following command:
+To test the framework, we provide pretrained models for `GTAV → Cityscapes`, `CARLA → Cityscapes`, and `CARLA → KITTI`. Download the models from [Google Drive](https://drive.google.com/drive/folders/19Q8E9wy3MR-vUfOfVwytIzv4QNpndYo0?usp=sharing) and transfer them into `code/checkpoints/REGEN/`. Finally, transfer the images that are to be inferred with the model in the `code/data/test_A` directory and execute the following command:
 
 ```javascript
 python test.py --dataroot ./data --name REGEN --label_nc 0 --no_instance --gpu_id 0
 ```
 
-The resulting images will be saved in the `./results/REGEN/images/` directory.
+The resulting images will be saved in the `code/results/REGEN/images/` directory.
 
 ## Real-Time Inference
 
@@ -73,6 +77,6 @@ To test the model on GTA V, download the game and set it to the minimum graphics
 python gta_test.py --dataroot ./data --name REGEN --label_nc 0 --no_instance --gpu_id 0
 ```
 
-> 📝 **Note**: All the available parameters of the model (e.g., for changing the resolution of the resulting images) can be found in `./options/`.
+> 📝 **Note**: All the available parameters of the model (e.g., for changing the resolution of the resulting images) can be found in `code/options/`.
 
 
