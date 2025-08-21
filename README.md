@@ -4,7 +4,7 @@
 
 ## Demonstration
 
-The following demos illustrate the framework performing `GTAV → Cityscapes` with an RTX 4090 and `CARLA → KITTI` with an RTX 4070 Super and a 20 fps cap of the simulator in synchronous mode. Videos may require some time to load.
+The following demos illustrate the framework performing `GTAV → Cityscapes` at 1280x720 (maximum game settings) and `CARLA → KITTI` at `960x540` with a 20 fps cap of the simulator in synchronous mode. Both are running in a system with a mid-range GPU, `RTX 4070 super 12GB` an `Intel I7 13700KF` CPU and `32GB DDR4` system memory. With high-end models such as `RTX 4090 24GB` (used in the paper) and  `RTX 5090 32GB` the achievable FPS are significantly higher.
 
 <p align="center">
   <img src="./demos/demo_gta.gif" width="45%" />
@@ -76,6 +76,7 @@ To test the model on GTA V, download the game and set it to the minimum graphics
 ```javascript
 python gta_test.py --dataroot ./data --name REGEN --label_nc 0 --no_instance --gpu_id 0
 ```
+> ⚠️ **Warning**: You may need to modify the offsets in line 60 of `gta_test.py` in order to perfectly crop the game window while capturing. 
 
 > 📝 **Note**: All the available parameters of the model (e.g., for changing the resolution of the resulting images) can be found in `code/options/`.
 
