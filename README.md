@@ -71,6 +71,10 @@ python test.py --dataroot ./data --name REGEN --label_nc 0 --no_instance --gpu_i
 
 The resulting images will be saved in the `code/results/REGEN/images/` directory.
 
+> 📝 **Note**: We have already provided some sample screenshots for testing purposes that also include the UI of the game.
+
+<img width="1216" height="337" alt="test_images" src="https://github.com/user-attachments/assets/eb74afeb-604e-4569-81bf-8b97a3c9cb20" />
+
 ## Real-Time Inference
 
 We additionally provide two sample scripts for testing the models in real-time conditions. The provided pretrained models should be placed in the same directory as for testing.
@@ -90,7 +94,9 @@ To test the model on GTA V, first download and run the game. Considering that th
 ```javascript
 python gta_test.py --dataroot ./data --name REGEN --label_nc 0 --no_instance --gpu_id 0
 ```
-> ⚠️ **Warning**: You may need to modify the offsets in line 60 of `gta_test.py` in order to perfectly crop the game window while capturing. 
+> ⚠️ **Warning**: You may need to modify the offsets in line 60 of `gta_test.py` in order to perfectly crop the game window while capturing.
+
+> 📝 **Note**: For the best results, it is recommended to download [ScriptHook](https://www.gta5-mods.com/tools/script-hook-v) and [Hood Camera](https://www.gta5-mods.com/scripts/hood-camera) mods, as the PFD dataset used for training is mainly limited to that perspective.
 
 > 📝 **Note**: All the available parameters of the model (e.g., for changing the resolution of the resulting images) can be found in `code/options/`.
 
