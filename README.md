@@ -86,6 +86,7 @@ To test the model on CARLA, download the UE4 executable of the simulator from th
 ```javascript
 python carla_test.py --dataroot ./data --name REGEN --label_nc 0 --no_instance --gpu_id 0
 ```
+<img width="1233" height="289" alt="carla" src="https://github.com/user-attachments/assets/72729705-0a54-43ff-b27d-0f0887f6122f" />
 
 ### Grand Theft Auto V
 
