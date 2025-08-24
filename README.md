@@ -7,7 +7,7 @@
 The following demos illustrate the framework performing `GTAV → Cityscapes` at 1280x720 (maximum game settings) and `CARLA → KITTI` at `960x540` with a 20 fps cap of the simulator in synchronous mode. Both are running in a system with an `RTX 4070 Super 12GB`, an `Intel i7 13700KF CPU`, and `32GB of DDR4` system memory without any optimization (e.g., TensorRT). With high-end GPUs such as `RTX 4090 24GB` (used in the paper) and `RTX 5090 32GB`, the achievable FPS are significantly higher. The footages were recorded with OBS Studio while the game/simulator was also rendered on the same GPU.
 
 <p align="center">
-  <img src="./demos/test_4090.gif" width="100%" />
+  <img src="./demos/test_4090.gif" width="80%" />
 </p>
 
 <p align="center">
