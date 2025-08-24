@@ -4,7 +4,7 @@
 
 ## Demonstration
 
-The following demo illustrates a side-by-side comparison of the framework performing `GTAV → Cityscapes` at 1280x720 (maximum game settings). The footages were recorded with OBS Studio while the game/simulator was also rendered on the same GPU. The following demo is running on a system with an `RTX 4090`, an `Intel i7 14700F CPU`, and `64GB of DDR4` system memory without any optimization (e.g., TensorRT). The full video is included in the `demos` directory.
+The following demo illustrates a side-by-side comparison of the framework performing `GTAV → Cityscapes` at 1280x720 (maximum game settings). The footages were recorded with OBS Studio while the game/simulator was also rendered on the same GPU. It is running on a system with an `RTX 4090`, an `Intel i7 14700F CPU`, and `64GB of DDR4` system memory without any optimization (e.g., TensorRT). The full video is included in the `demos` directory.
 
 <p align="center">
   <img src="./demos/test_4090.gif" width="80%" />
