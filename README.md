@@ -26,8 +26,14 @@ Photorealism is an important aspect of modern video games since it can shape the
 If you used the REGEN framwork or any of the pretrained models from this repository in a scientific publication, we would appreciate using the following citation:
 
 ```
-@ARTICLE{11122908,
-  author={Pasios, Stefanos},
+@misc{pasios2025regenrealtimephotorealismenhancement,
+      title={REGEN: Real-Time Photorealism Enhancement in Games via a Dual-Stage Generative Network Framework}, 
+      author={Stefanos Pasios and Nikos Nikolaidis},
+      year={2025},
+      eprint={2508.17061},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2508.17061}, 
 }
 ```
 
