@@ -117,7 +117,7 @@ python carla_test.py --dataroot ./data --name REGEN --label_nc 0 --no_instance -
 
 ### Grand Theft Auto V
 
-To test the model on GTA V, first download and run the game. Considering that the script performs real-time capturing of the game window, set the game in windowed mode with a lower resolution of the monitor (a dual-monitor setup would be ideal). Then execute the following script:
+To test the model on GTA V, first download and run the game. Considering that the script performs real-time capturing of the game window, set the game in windowed mode with a lower resolution of the monitor (a dual-monitor setup would be ideal). In addition, through the game settings cap the frame rate to 30 FPS to reduce the GPU load. Then execute the following script:
 
 ```javascript
 python gta_test.py --dataroot ./data --name REGEN --label_nc 0 --no_instance --gpu_id 0
