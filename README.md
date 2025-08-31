@@ -19,10 +19,11 @@
 
 ## Demonstration
 
-The following demo illustrates a side-by-side comparison of the framework performing `GTAV → Cityscapes` at `1280x720 (maximum game settings)`. The footages were recorded with OBS Studio while the game was also rendered on the same GPU. It is running on a system with an `RTX 4090`, an `Intel i7 14700F CPU`, and `64GB of DDR4` system memory without any optimization (e.g., TensorRT). The full video is included in the `demos` directory.
+The following demo illustrates a side-by-side comparison of the framework performing `GTAV → Cityscapes` (left) and `GTAV → Mapillary Vistas` (right) at `1280x720 (maximum game settings)`. The footages were recorded with OBS Studio while the game was also rendered on the same GPU. It is running on a system with an `RTX 4090`, an `Intel i7 14700F CPU`, and `64GB of DDR4` system memory without any optimization (e.g., TensorRT). The full video is included in the `demos` directory.
 
 <p align="center">
-  <img src="./demos/test_4090.gif" width="80%" />
+  <img src="./demos/gta2cs.gif" width="45%" />
+  <img src="./demos/gta2vistas.gif" width="45%" />
 </p>
 
 The following demos illustrate the framework performing `GTAV → Cityscapes` at `1280x720 (maximum game settings)` and `CARLA → KITTI` at `960x540` with a 20 fps cap of the simulator in synchronous mode. Both are running on a system with an `RTX 4070 Super 12GB`, an `Intel i7 13700KF CPU`, and `32GB of DDR4` system memory without any optimization (e.g., TensorRT).
