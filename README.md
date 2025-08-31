@@ -2,6 +2,21 @@
 
 # REGEN: Real-Time Photorealism Enhancement in Games via a Dual-Stage Generative Network Framework
 
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <a href="https://arxiv.org/abs/2508.17061" target="_blank">
+    <img alt="Static Badge" src="https://img.shields.io/badge/PAPER-blue?style=for-the-badge&logo=arxiv&logoSize=auto">
+  </a>
+  <a href="https://www.youtube.com/watch?v=tEgk4ycpmpQ" target="_blank">
+    <img alt="Static Badge" src="https://img.shields.io/badge/DEMO-red?style=for-the-badge&logo=YouTube&logoSize=auto">
+  </a>
+  <a href="https://drive.google.com/drive/folders/19Q8E9wy3MR-vUfOfVwytIzv4QNpndYo0" target="_blank">
+<img alt="Static Badge" src="https://img.shields.io/badge/MODELS-orange?style=for-the-badge&logo=googledrive&logoSize=auto">
+  </a>
+    <a href="https://github.com/stefanos50/CARLA2Real" target="_blank">
+<img alt="Static Badge" src="https://img.shields.io/badge/CARLA2Real_Project-black?style=for-the-badge&logo=github&logoSize=auto">
+  </a>
+</div>
+
 ## Demonstration
 
 The following demo illustrates a side-by-side comparison of the framework performing `GTAV → Cityscapes` at `1280x720 (maximum game settings)`. The footages were recorded with OBS Studio while the game was also rendered on the same GPU. It is running on a system with an `RTX 4090`, an `Intel i7 14700F CPU`, and `64GB of DDR4` system memory without any optimization (e.g., TensorRT). The full video is included in the `demos` directory.
