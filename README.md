@@ -42,15 +42,16 @@ Photorealism is an important aspect of modern video games since it can shape the
 If you used the REGEN framwork or any of the pretrained models from this repository in a scientific publication, we would appreciate using the following citation:
 
 ```
-@misc{pasios2025regenrealtimephotorealismenhancement,
-      title={REGEN: Real-Time Photorealism Enhancement in Games via a Dual-Stage Generative Network Framework}, 
-      author={Stefanos Pasios and Nikos Nikolaidis},
-      year={2025},
-      eprint={2508.17061},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2508.17061}, 
-}
+@ARTICLE{11373202,
+  author={Pasios, Stefanos and Nikolaidis, Nikos},
+  journal={IEEE Transactions on Games}, 
+  title={REGEN: Real-Time Photorealism Enhancement in Games Via a Dual-Stage Generative Network Framework}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={Games;Translation;Photorealism;Visualization;Semantics;Video games;Real-time systems;Training;Engines;Rendering (computer graphics);Computer vision;image-to-image translation;photorealism enhancement;unreal engine},
+  doi={10.1109/TG.2026.3661622}}
 ```
 
 > 📝 **Note**: This repository uses code from the [Pix2PixHD repository](https://github.com/NVIDIA/pix2pixHD).
