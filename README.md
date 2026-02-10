@@ -3,8 +3,8 @@
 # REGEN: Real-Time Photorealism Enhancement in Games via a Dual-Stage Generative Network Framework
 
 <div style="display: flex; justify-content: center; gap: 10px;">
-  <a href="https://arxiv.org/abs/2508.17061" target="_blank">
-    <img alt="Static Badge" src="https://img.shields.io/badge/PAPER-blue?style=for-the-badge&logo=arxiv&logoSize=auto">
+  <a href="https://ieeexplore.ieee.org/document/11373202" target="_blank">
+    <img alt="Static Badge" src="https://img.shields.io/badge/PAPER-blue?style=for-the-badge&logo=IEEE&logoSize=auto">
   </a>
   <a href="https://www.youtube.com/watch?v=tEgk4ycpmpQ" target="_blank">
     <img alt="Static Badge" src="https://img.shields.io/badge/DEMO-red?style=for-the-badge&logo=YouTube&logoSize=auto">
