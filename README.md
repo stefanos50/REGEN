@@ -15,6 +15,9 @@
     <a href="https://github.com/stefanos50/CARLA2Real" target="_blank">
 <img alt="Static Badge" src="https://img.shields.io/badge/CARLA2Real_Project-black?style=for-the-badge&logo=github&logoSize=auto">
   </a>
+      <a href="https://github.com/stefanos50/HyPER-GAN" target="_blank">
+<img alt="Static Badge" src="https://img.shields.io/badge/HyPER-GAN_Project-black?style=for-the-badge&logo=github&logoSize=auto">
+  </a>
 </div>
 
 ## Demonstration
@@ -31,6 +34,7 @@ The following demo illustrates a side-by-side comparison of the framework perfor
 Below is a real-time demo (RTX 4070S) of REGEN trained to translate CARLA towards the output of FLUX.2-klein-4B. Due to the more frequent inconsistencies of diffusion models (e.g., changing the color of the vehicles) compared to image-to-image translation, there are more frequent instances of temporal instability (e.g., flickering) compared to traditional image-to-image translation methods. However, these issues can be mitigated by leveraging more advanced, paid diffusion-based models, such as ChatGPT Image or Qwen Image 2.0.
 
 
+https://github.com/user-attachments/assets/288eceee-299f-473d-a144-386396bdc1b6
 
 
 ### Updates
