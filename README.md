@@ -26,12 +26,19 @@ The following demo illustrates a side-by-side comparison of the framework perfor
   <img src="./demos/gta2vistas.gif" width="45%" />
 </p>
 
-The following demos illustrate the framework performing `GTAV → Cityscapes` at `1280x720 (maximum game settings)` and `CARLA → KITTI` at `960x540` with a 20 fps cap of the simulator in synchronous mode. Both are running on a system with an `RTX 4070 Super 12GB`, an `Intel i7 13700KF CPU`, and `32GB of DDR4` system memory without any optimization (e.g., TensorRT).
+## Diffusion Models
 
-<p align="center">
-  <img src="./demos/demo_gta.gif" width="45%" />
-  <img src="./demos/demo_carla.gif" width="45%" />
-</p>
+Below is a real-time demo (RTX 4070S) of REGEN trained to translate CARLA towards the output of FLUX.2-klein-4B. Due to the more frequent inconsistencies of diffusion models (e.g., changing the color of the vehicles) compared to image-to-image translation, there are more frequent instances of temporal instability (e.g., flickering) compared to traditional image-to-image translation methods. However, these issues can be mitigated by leveraging more advanced, paid diffusion-based models, such as ChatGPT Image or Qwen Image 2.0.
+
+
+https://github.com/user-attachments/assets/a7608c15-a5aa-4c1e-9782-94f1878c854c
+
+
+### Updates
+
+* **22/03/2026**: Added a model trained on the output of FLUX.2-klein-4B.
+* **16/12/2025**: Added pretrained model for [nuScenes](https://www.nuscenes.org/).
+
 
 ## Abstract
 
