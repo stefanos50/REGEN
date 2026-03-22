@@ -16,7 +16,7 @@
 <img alt="Static Badge" src="https://img.shields.io/badge/CARLA2Real_Project-black?style=for-the-badge&logo=github&logoSize=auto">
   </a>
       <a href="https://github.com/stefanos50/HyPER-GAN" target="_blank">
-<img alt="Static Badge" src="https://img.shields.io/badge/HyPER-GAN_Project-black?style=for-the-badge&logo=github&logoSize=auto">
+<img alt="Static Badge" src="https://img.shields.io/badge/HyPERGAN_Project-black?style=for-the-badge&logo=github&logoSize=auto">
   </a>
 </div>
 
