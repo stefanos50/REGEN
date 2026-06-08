@@ -39,6 +39,7 @@ https://github.com/user-attachments/assets/288eceee-299f-473d-a144-386396bdc1b6
 
 ### Updates
 
+* **09/06/2026**: Added code for exporting the models into ONNX format. Added sample code for inference through ONNX Runtime. Added instructions for integrading the models into Unreal Engine 5.
 * **22/03/2026**: Added a model trained on the output of FLUX.2-klein-4B.
 * **16/12/2025**: Added pretrained model for [nuScenes](https://www.nuscenes.org/).
 
@@ -78,6 +79,7 @@ pip install dominate
 pip install scipy
 pip install mss
 pip install pywin32
+pip install onnxruntime-gpu
 ```
 
 ## Training
@@ -140,4 +142,26 @@ python gta_test.py --dataroot ./data --name REGEN --label_nc 0 --no_instance --g
 
 > 📝 **Note**: All the available parameters of the model (e.g., for changing the resolution of the resulting images) can be found in `code/options/`.
 
+## Integration
+
+In order to easily integrate the models into your own pipelines, we provide code for transforming the models into the widely used for deployment ONNX format. To export a model into ONNX, run the following command:
+
+```javascript
+%example command
+python regen_onnx_eport.py --input <path-to>\carla2kitti.pth --output <path-to>\carla2kitti.onnx --height 544 --width 960
+```
+
+A sample script is also provided in `onnx_utils/test_onnx.py` to understand the preprocessing as well as the postprocessing steps that are required for inference with ONNX Runtime. To test the exported ONNX model on an image, run the following command:
+
+```javascript
+%example command
+python test_onnx.py --onnx <path-to>/carla2kitti.onnx --image <path-to>/image.jpg --height 544 --width 960 --output <path-to>/output.jpg
+```
+### Unreal Engine 5 Integration
+
+With the release of the Unreal Engine 5 version 5.4 and above the engine now supports the real-time integration of neural rendering models through ONNX runtime. The integration requires no more than 7-8 minutes following the video tutorial: [see the tutorial here](https://www.youtube.com/watch?v=OjdG4TqBozg). Below, we provide the exact preprocessing and postprocessing steps that should be applied to the post-processing material:
+
+<img width="1259" height="759" alt="Screenshot 2026-06-09 003738" src="https://github.com/user-attachments/assets/f6d43c6e-d0d1-45ae-8681-ed0164039ba6" />
+
+> 📝 Note: In Unreal Engine, the GPU will have to render both the engine's synthetic environment and run the model. At a resolution of 960x544, an RTX 4090 can achieve above 20 FPS when integrating REGEN into Unreal Engine 5.
 
