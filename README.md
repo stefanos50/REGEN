@@ -56,12 +56,12 @@ If you used the REGEN framwork or any of the pretrained models from this reposit
 @ARTICLE{11373202,
   author={Pasios, Stefanos and Nikolaidis, Nikos},
   journal={IEEE Transactions on Games}, 
-  title={REGEN: Real-Time Photorealism Enhancement in Games Via a Dual-Stage Generative Network Framework}, 
+  title={REGEN: Real-Time Photorealism Enhancement in Games via a Dual-Stage Generative Network Framework}, 
   year={2026},
-  volume={},
-  number={},
-  pages={1-8},
-  keywords={Games;Translation;Photorealism;Visualization;Semantics;Video games;Real-time systems;Training;Engines;Rendering (computer graphics);Computer vision;image-to-image translation;photorealism enhancement;unreal engine},
+  volume={18},
+  number={2},
+  pages={404-410},
+  keywords={Games;Translation;Photorealism;Visualization;Semantics;Video games;Real-time systems;Training;Engines;Rendering (computer graphics);Computer vision;image-to-image (Im2Im) translation;photorealism enhancement;Unreal Engine (UE)},
   doi={10.1109/TG.2026.3661622}}
 ```
 
